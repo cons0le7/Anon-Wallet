@@ -7,14 +7,20 @@
 
 # Installation 
 `cd installers` 
-Select the appropriate Installer for your system: 
 
-`chmod +x install.sh` then `./install.sh` for desktop linux.
+Select the appropriate Installer for your system.  
 
-`chmod +x termux.sh` then `./install.sh` for Termux. 
+for desktop linux:
+`chmod +x install.sh` then `./install.sh` 
 
-`chmod +x iSH.sh` then `./iSH.sh` for iSH. 
+for Termux: 
+`chmod +x termux.sh` then `./install.sh` 
 
-After installation: 
+for iSH: 
+`chmod +x iSH.sh` then `./iSH.sh`  
+
+After installation:
+
 `cd ..`
+
 `python3 start.py` 
