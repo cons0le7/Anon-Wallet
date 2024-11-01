@@ -35,10 +35,17 @@ After installation:
 
 ```
 cd ..
+```
+
+
+# Usage 
+
+Run script: 
+
+```
 python3 start.py
 ```
 
-# Usage 
 
 You will be presented with 4 options upon running:
 
