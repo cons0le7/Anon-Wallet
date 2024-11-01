@@ -11,19 +11,29 @@
 Select the appropriate Installer for your system.  
 
 for desktop linux:
-`chmod +x install.sh` then `./install.sh` 
+```
+chmod +x install.sh 
+./install.sh
+```
 
 for Termux: 
-`chmod +x termux.sh` then `./install.sh` 
+```
+chmod +x termux.sh 
+./install.sh`
+```
 
 for iSH: 
-`chmod +x iSH.sh` then `./iSH.sh`  
+```
+chmod +x iSH.sh 
+./iSH.sh`
+```
 
 After installation:
 
-`cd ..`
-
-`python3 start.py` 
+```
+cd ..
+python3 start.py
+```
 
 # Usage 
 
