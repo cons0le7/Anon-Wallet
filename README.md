@@ -29,14 +29,15 @@ After installation:
 
 You will be presented with 4 options upon running:
 
-- 'Generate new wallet.'
-  - This will generate wallet Public and Private keys. You will have the option to show these keys in terminal, save to files without displaying or save and display.
+- Generate new wallet.
+  - This will generate wallet Public and Private keys. You will have the option to show these keys in terminal, save to files without displaying or save and display. Be aware of your surroundings if you choose either option that displays keys as private key should be kept private. 
     
-- 'Encrypt wallet.'
+- Encrypt wallet.
   - This will give the option to load keys from file or input keys manually thru terminal. if you choose to load from file, this will allow you to encrypt any wallet where keys are stored as 'public.txt' and 'private.txt' in the working directory (.../menu/). This is the same format the keys are stored as during wallet generation. If you chose to have them saved as files during generation, you will be able to load them directly here.
   - Once keys are loaded or inputted, a decryption key will be generated and saved as 'decrypt.key' and the encrypted wallet will be stored as 'wallet.btc' 
  
-- 'Open wallet.'
-- 'Exit.'
+- Open wallet.'
+  
+- Exit.
 
   
