@@ -54,9 +54,14 @@ You will be presented with 4 options upon running:
     
 - Encrypt wallet.
   - This will give the option to load keys from file or input keys manually thru terminal. if you choose to load from file, this will allow you to encrypt any wallet where keys are stored as 'public.txt' and 'private.txt' in the working directory (.../Anon-Wallet/). This is the same format the keys are stored as during wallet generation. If you chose to have them saved as files during generation, you will be able to load them directly here.
-  - Once keys are loaded or inputted, a decryption key will be generated and saved as 'decrypt.key' and the encrypted wallet will be stored as 'wallet.btc' You will then be prompted with a question asking if you would like to delete the plaintext keys. Unless you plan to back them up and store them somewhere else, it is recommended to do so as they will no longer be needed to open wallet. 
+  - Once keys are loaded or inputted, a decryption key will be generated and saved as 'decrypt.key' and the encrypted wallet will be stored as 'wallet.btc' You will then be prompted with a question asking if you would like to delete the plaintext keys. Unless you plan to back them up and store them somewhere else, it is recommended to do so as they will no longer be needed to open wallet.
+  - You will be prompted to give a name for the directory for the wallet to be saved in. Both files 'wallet.btc' and decrypt.key will be stored there. It is recommended to make corresponding folders for each of your wallets on a seperate storage device such as a flashdrive and move the keys there. Your wallet.btc will be inacessible without their key in the same directory. Take caution not to mix keys or wallets as they all have the same file names.
+  - For further security you can create another set of corresponding folders on another seperate storage device. For example: you have 2 flash drives, both with the corresponding folders for your wallets, one set of folders on one flashdrive contains the wallet.btc files and the other contains the decrypt.key files. You can remove the files completely from your device and use them as cold storage wallets making them completely inaccessible in case of a compromised machine. To access again, you can transfer both files from your external drives into their corresponding folders in .../Anon-Wallet/.
  
-- Open wallet.'
+- Open wallet.
+  - This will list all saved wallets. You can choose which one to open. As long as both wallet.btc and decrypt.key are present in the wallets directory it will be decrypted and opened.
+  - To access the wallet and check balance or sent Bitcoin, you will need to register with BlockCypher and aquire an auth token. this is free but be sure to look at their terms and conditions for details on usage and sending fees.
+  - Register here:  
   
 - Exit.
 
