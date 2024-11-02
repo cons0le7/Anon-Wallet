@@ -10,8 +10,7 @@
 # Installation 
 ```
 git clone https://github.com/cons0le7/Anon-Wallet/
-cd Anon-Wallet
-cd installers
+cd ~/Anon-Wallet/installers
 ```
 
 Select the appropriate Installer for your system.  
