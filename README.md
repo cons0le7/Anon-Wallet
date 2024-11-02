@@ -64,7 +64,7 @@ You will be presented with 4 options upon running:
   - To access the wallet and check balance or sent Bitcoin, you will need to register with BlockCypher and aquire an auth token. this is free but be sure to look at their terms and conditions for details on usage and sending fees.
   - Register here:
     https://accounts.blockcypher.com/signup
-  - Aqcuire token here:
+  - Acquire token here:
     https://accounts.blockcypher.com/tokens
   - You can either copy the token, paste it into a text editor and save it as 'token.api' in '.../Anon-Wallet' (same directory as all the .py files.) or you can enter the token when prompted after choosing the option to open wallet and the script will automatically do this for you.
   - Keep your token private. You can also remove the token file and return it whenever you need to access your wallet for heightened security.
@@ -75,7 +75,7 @@ You will be presented with 4 options upon running:
 - First get a BlockCypher token:
   - Register here:
     https://accounts.blockcypher.com/signup
-  - Aqcuire token here:
+  - Acquire token here:
     https://accounts.blockcypher.com/tokens
     
 - `python3 start.py` > Generate wallet (1) > Save to file (2) > Encrypt wallet (1) > Load keys from file (1) > yes > Enter wallet name > reload script `python3 start.py` > Open wallet > enter BlockCypher token. 
