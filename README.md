@@ -83,8 +83,11 @@ You will be presented with 4 options upon running:
 - `python3 start.py` > Generate wallet (1) > Save to file (2) > Encrypt wallet (1) > Load keys from file (1) > yes > Enter wallet name > reload script `python3 start.py` > Open wallet > enter BlockCypher token. 
 # Important Notes 
 I made this for my own self Education. It is functional but I am not responsible for any financial losses that may occur from using this wallet. 
+
 *I can not open your wallets if you lost the keys so do not ask.* 
-Back up your wallets and your keys and keep them safe. 
-*Use at your own risk*
+
+Back up your wallets and your keys and keep them safe.
+
+*Use at your own risk.*
 
   
