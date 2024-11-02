@@ -5,6 +5,8 @@
 - Can be used as a cold storage wallet. 
 - Can check balance and send Bitcoin using BlockCypher token.
 
+![IMG_0673](https://github.com/user-attachments/assets/a8785eeb-b134-4c5c-b355-e030004f0690)
+
 # Installation 
 ```
 cd Anon-Wallet
