@@ -1,6 +1,6 @@
 # Anon-Wallet 
 - A Bitcoin wallet generator with AES-256 encryption.
-- Compatible with desktop linux, Termux for android and iSH for iOS. 
+- Compatible with desktop Linux, Termux for android and iSH for iOS. 
 - Can generate, save & load multiple wallets. 
 - Can be used as a cold storage wallet. 
 - Can check balance and send Bitcoin using BlockCypher token.
