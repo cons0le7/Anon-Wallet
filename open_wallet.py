@@ -71,7 +71,7 @@ def get_blockcypher_token():
             return get_blockcypher_token()
 
 def list_directories():
-    directories = [d for d in os.listdir() if os.path.isdir(d) and d not in ('__pycache__', 'installers')]
+    directories = [d for d in os.listdir() if os.path.isdir(d) and d not in ('__pycache__', '.git', 'installers')]
     return directories
 
 def wallet():
