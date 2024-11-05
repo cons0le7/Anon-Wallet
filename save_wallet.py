@@ -24,6 +24,5 @@ def save():
         for file in files_found:
             shutil.copy(file, folder_name)
         print("\nWallet saved successfully. \nScript must be reloaded to use.")
-        print("\nExiting...")
-        sys.exit()
+        import reload_module
 save()
