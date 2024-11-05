@@ -1,5 +1,8 @@
 #!/bin/bash
 
+wallet_dir="$(dirname "$(pwd)")"
+chmod +x "$wallet_dir/reload.sh"
+
 echo "Updating package list..."
 apk update
 
