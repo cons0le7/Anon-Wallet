@@ -3,7 +3,7 @@
 - Compatible with desktop Linux, Termux for android and iSH for iOS. 
 - Can generate, save & load multiple wallets. 
 - Can be used as a cold storage wallet. 
-- Can check balance and send Bitcoin using BlockCypher token.
+- Can check balance and send Bitcoin using BlockCypher API token.
 
 ![IMG_0675](https://github.com/user-attachments/assets/6d0398f9-97f3-43b7-b6dd-e0e6d1dce315)
 
@@ -55,7 +55,7 @@ You will be presented with 4 options upon running:
   - This will generate wallet Public and Private keys. You will have the option to show these keys in terminal, save to files without displaying or save and display. Be aware of your surroundings if you choose either option that displays keys, as private key should be kept private. 
     
 - Encrypt wallet.
-  - This will give the option to load keys from file or input keys manually thru terminal. if you choose to load from file, this will allow you to encrypt any wallet where keys are stored as 'public.txt' and 'private.txt' in the working directory (.../Anon-Wallet/). This is the same format the keys are stored as during wallet generation. If you chose to have them saved as files during generation, you will be able to load them directly here.
+  - This will give the option to load keys from file or input keys manually thru terminal. if you choose to load from file, this will allow you to encrypt any wallet where keys are stored as 'public.txt' and 'private.txt' in the working directory (.../Anon-Wallet). This is the same format the keys are stored as during wallet generation. If you chose to have them saved as files during generation, you will be able to load them directly here.
   - Once keys are loaded or inputted, a decryption key will be generated and saved as 'decrypt.key' and the encrypted wallet will be stored as 'wallet.btc' You will then be prompted with a question asking if you would like to delete the plaintext keys. Unless you plan to back them up and store them somewhere else, it is recommended to do so as they will no longer be needed to open wallet.
   - You will be prompted to give a name for the directory in which the wallet will be saved. Both files 'wallet.btc' and 'decrypt.key' will be stored there. It is recommended to make corresponding folders for each of your wallets on a seperate storage device such as a flashdrive and move the keys there. Your wallet.btc will be inacessible without their key in the same directory. Take caution not to mix keys or wallets as they all have the same file names.
   - For further security you can create another set of corresponding folders on another seperate storage device. For example: you have 2 flash drives, both with the corresponding folders for your wallets, one set of folders on one flashdrive contains the wallet.btc files and the other contains the decrypt.key files. You can remove the files completely from your device and use them as cold storage wallets making them completely inaccessible in case of a compromised machine. To access again, you can transfer both files from your external drives into their corresponding folders in .../Anon-Wallet/.
