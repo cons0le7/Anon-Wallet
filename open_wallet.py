@@ -31,21 +31,18 @@ def decrypt(enc_data, key):
     pt = unpadder.update(padded_data) + unpadder.finalize()
     return pt.decode('utf-8')
 
-def check_balance(public_key, token):
-    url = f'https://api.blockcypher.com/v1/btc/main/addrs/{public_key}/balance?token={token}'
-    response = requests.get(url)
-    if response.status_code == 200:
-        balance_info = response.json()
-        return f"\nBalance for {public_key}: {balance_info['final_balance'] / 1e8} BTC"
-    else:
-        return f"\nError fetching balance: {response.text}"
-
 def send_bitcoin(private_key, to_address, amount, token):
+    try:
+        amount_in_satoshis = int(float(amount) * 1e8)
+    except ValueError:
+        return "\nError: Invalid amount format. Please enter a valid number."
+
     url = f'https://api.blockcypher.com/v1/btc/main/txs/new?token={token}'
     tx_data = {
         "inputs": [{"addresses": [private_key]}],
-        "outputs": [{"addresses": [to_address], "value": int(amount * 1e8)}]
+        "outputs": [{"addresses": [to_address], "value": amount_in_satoshis}]
     }
+    
     response = requests.post(url, json=tx_data)
     if response.status_code == 201:
         tx_info = response.json()
