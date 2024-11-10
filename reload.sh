@@ -1,7 +1,6 @@
 #!/bin/bash
 
 echo "Reloading Anon-Wallet..."
-
 dir=$(pwd)
 processes=(
     "$dir/encrypt_wallet.py"
@@ -14,10 +13,10 @@ processes=(
 check_running() {
     for process in "${processes[@]}"; do
         if pgrep -f "$process" > /dev/null; then
-            return 0 
+            return 0
         fi
     done
-    return 1 
+    return 1
 }
 
 for process in "${processes[@]}"; do
@@ -25,8 +24,9 @@ for process in "${processes[@]}"; do
 done
 
 while check_running; do
-    sleep 0.5 
+    sleep 0.5
 done
 
-python3 "$dir/start.py" & 
+python3 "$dir/start.py" &
+
 kill $$
