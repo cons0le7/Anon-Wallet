@@ -27,6 +27,4 @@ while check_running; do
     sleep 0.5
 done
 
-python3 "$dir/start.py" &
-
-kill $$
+python3 "$dir/start.py" 
