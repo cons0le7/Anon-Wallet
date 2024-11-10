@@ -135,7 +135,8 @@ def wallet():
     while True:
         print("\n(1) Check Balance")
         print("(2) Send Bitcoin")
-        print("(3) Exit")
+        print("(3) Main menu")
+        print("(4) Exit")
         choice = input("\nChoose an option: ")
         if choice == '1':
             print(check_balance(public_key, blockcypher_token))
@@ -143,9 +144,11 @@ def wallet():
             to_address = input("\nEnter the recipient's address: ")
             amount = float(input("\nEnter the amount to send: "))
             print(send_bitcoin(private_key, to_address, amount, blockcypher_token))
-        elif choice == '3':
+        elif choice == '4':
             print("\nExiting...")
             break
+        elif choice == '3': 
+            import reload_module
         else:
             print("\nInvalid option. Please try again.")
 
