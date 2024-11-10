@@ -48,16 +48,16 @@ def save_to_file(filename, content):
 
 def generate():
     wallet = generate_wallet()
-    display_option = input("\nGenerate public & private keys: \n\n(1) Display in terminal. \n(2) Save to file. \n(3) Save and display. \n\n")
-
+    display_option = input("\nGenerate public & private keys: \n\n(1) Display in terminal. \n(2) Save to file. \n(3) Save and display. \n(4) Back. \n\n")
     if display_option == '1' or display_option == '3':
         print("\nPrivate key: ", wallet['wif'])
         print("\nPublic key: ", wallet['p2sh_address'])
-
     if display_option == '2' or display_option == '3':
         save_to_file('private.txt', wallet['wif'])
         save_to_file('public.txt', wallet['p2sh_address'])
         print("\nKeys saved to private.txt and public.txt")
+    elif display_option == '4':
+        import reload_module
     encrypt_wallet = int(input("\n(1) Encrypt wallet. \n(2) Exit.\n\n"))
     try: 
         if encrypt_wallet == 1: 
