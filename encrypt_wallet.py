@@ -31,7 +31,7 @@ def encrypt(data, key):
     return json.dumps({'iv': iv_b64, 'ciphertext': ct})
 
 def wallet():
-    choice = input("\n(1) Load keys from file. \n(2) Enter keys manually. \n\n")
+    choice = input("\n(1) Load keys from file. \n(2) Enter keys manually. \n(3) Back. \n\n")
     
     if choice == '1':
         if os.path.exists('public.txt') and os.path.exists('private.txt'):
@@ -46,6 +46,8 @@ def wallet():
     elif choice == '2':
         public_key = input("\nEnter your BTC address public key: ")
         private_key = getpass.getpass("\nEnter your BTC address private key: ")
+    elif choice == '3':
+        import reload_module
     else:
         print("Invalid option. Exiting...")
         return
