@@ -7,7 +7,7 @@ echo "Updating package list..."
 pkg update
 
 echo "Installing Python and pip..."
-pkg install -y python3 python3-pip
+pkg install -y python3 python-pip
 
 echo "Installing required Python packages..."
 pip3 install ecdsa requests
