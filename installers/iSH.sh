@@ -6,6 +6,9 @@ chmod +x "$wallet_dir/reload.sh"
 echo "Updating package list..."
 apk update
 
+echo "Installing bash..."
+apk add bash 
+
 echo "Installing Python and pip..."
 apk add python3 py3-pip
 
