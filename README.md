@@ -30,7 +30,7 @@ chmod +x termux.sh
 for iSH: 
 ```
 chmod +x iSH.sh 
-./iSH.sh`
+./iSH.sh
 ```
 
 After installation:
