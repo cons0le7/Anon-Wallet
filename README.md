@@ -24,7 +24,7 @@ chmod +x install.sh
 for Termux: 
 ```
 chmod +x termux.sh 
-./install.sh`
+./install.sh
 ```
 
 for iSH: 
