@@ -1,4 +1,7 @@
 # Anon-Wallet 
+## !IMPORTANT! 
+### Send function is broken, you will not be able to send/withdraw bitcoin from your wallet until this is fixed. I have also had trouble importing the wallets generated from this tool into other wallet clients. I will be working on making things more modern and in compliance with standard practice. Until then, I do not recommend using this wallet.
+
 - A Bitcoin wallet generator with AES-256 encryption.
 - Compatible with desktop Linux, Termux for android and iSH for iOS. 
 - Can generate, save & load multiple wallets. 
